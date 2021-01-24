@@ -12,9 +12,9 @@ export class HttpserviceService {
 
   constructor(private http: HttpClient) { }
 
-  rachunki = "http://localhost:3030/api/getrachunki";
-  banki= "http://localhost:3030/api/bank";
-  transakcje = "http://localhost:3030/api/transakcje";
+  rachunki = "https://jrozliczajaca.herokuapp.com/api/getrachunki";
+  banki= "https://jrozliczajaca.herokuapp.com/api/bank";
+  transakcje = "https://jrozliczajaca.herokuapp.com/api/transakcje";
 
   getRachunki():Observable<Rachunek[]>{
     return this.http.get<Rachunek[]>(this.rachunki);
