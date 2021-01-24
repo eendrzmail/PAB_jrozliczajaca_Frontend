@@ -1,0 +1,34 @@
+
+.container{
+    display:flex;
+    
+}
+
+
+.choosebank {
+    padding:20px;
+    background:wheat;
+    border-radius: 15px;
+}
+
+.bankinfo{
+    margin-top:20px;
+}
+.bankinfo h4{
+    margin:3px 0 3px 0;
+}
+
+.right{
+    margin-left: 20px;
+    min-width: 600px;
+
+}
+
+.green{
+    color:green !important;
+}
+
+.mat-content{
+    background-color: blue !important;
+
+}

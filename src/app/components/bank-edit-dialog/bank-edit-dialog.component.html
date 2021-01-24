@@ -1,0 +1,40 @@
+
+<div class="all">
+    <h2 m-mat-dialog-title>Edytuj bank</h2>
+    <mat-dialog-content>
+        <table>
+            <tr>
+                <th>Nazwa:</th>
+                <td>
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Nazwa</mat-label>
+                        <input matInput placeholder="" [(ngModel)]="bank.nazwa">
+                    </mat-form-field>
+                </td>
+            </tr>
+            <tr>
+                <th>Adres:</th>
+                <td>
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Adres</mat-label>
+                        <input matInput placeholder="" [(ngModel)]="bank.adres">
+                    </mat-form-field>
+                </td>
+            </tr>
+            <tr>
+                <th>Kontakt:</th>
+                <td>
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Kontakt</mat-label>
+                        <input matInput placeholder="" [(ngModel)]="bank.kontakt">
+                    </mat-form-field>
+                </td>
+            </tr>
+        </table>
+
+    </mat-dialog-content>
+    <mat-dialog-actions>
+        <button mat-raised-button mat-dialog-close color="primary" (click)="zamknij()">Zapisz</button>
+        <button mat-raised-button mat-dialog-close mat-dialog-close="false">Wróć</button>
+    </mat-dialog-actions>
+</div>

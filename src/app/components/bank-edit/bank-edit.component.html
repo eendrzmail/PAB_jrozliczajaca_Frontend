@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="left card">
+        <div class="choosebank">
+            <button mat-raised-button style="width:100%;" routerLink="/">Wróć</button>
+            <h2>Podaj Rachunek:</h2>
+        
+                <mat-form-field class="example-full-width" style="min-width:250px">
+                  <mat-label>Rachunek</mat-label>
+                  <input type="text"
+                     matInput 
+                     [formControl]="bank" 
+                     [matAutocomplete]="auto"
+                     >
+                     
+                  <mat-autocomplete #auto="matAutocomplete">
+                    <mat-option *ngFor="let option of filteredRachunki" [value]="option.nr_rachunku">
+                      {{option.nr_rachunku}}
+                    </mat-option>
+                  </mat-autocomplete>
+                </mat-form-field>
+                <button mat-raised-button (click)="clear()">
+                  X
+                </button>
+          </div>
+    </div>
+    <div class="right card" *ngIf="bankinfo">
+        <h2>Informacje o banku</h2>
+        <table>
+            <tr>
+                <th>Nazwa:</th><td>{{bankinfo.nazwa}}</td>
+            </tr>
+            <tr>
+                <th>Adres</th><td>{{bankinfo.adres}}</td>
+            </tr>
+            <tr>
+                <th>Kontakt:</th><td>{{bankinfo.kontakt}}</td>
+            </tr>
+
+        </table>
+
+        <div style="margin-top:20px;">
+            <button mat-raised-button (click)="openEdit()">Edytuj</button>
+        </div>
+
+    </div>
+</div>

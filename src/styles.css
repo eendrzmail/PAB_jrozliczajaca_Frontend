@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { 
+    min-height: 100%;
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+    background: linear-gradient(teal,rgb(5, 24, 24));
+}
+
+
+.green-snackbar {
+    background: #057440;
+}
+.red-snackbar {
+    background: #6b031a;
+}

@@ -1,0 +1,26 @@
+:host{
+    display:flex;
+    flex-direction: row;
+    
+}
+
+.example-card {
+    max-width: 300px;
+  }
+  
+  
+.example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+
+  mat-card {
+      box-sizing: border-box;
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin:20px;
+      min-width:300px;
+      min-height:300px;
+  }
